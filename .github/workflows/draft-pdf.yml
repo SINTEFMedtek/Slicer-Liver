@@ -7,10 +7,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install rsvg-convert
-        run: |
-          sudo apt-get update
-          sudo apt install librsvg2-bin
       - name: Build draft PDF
         uses: openjournals/openjournals-draft-action@master
         with:
